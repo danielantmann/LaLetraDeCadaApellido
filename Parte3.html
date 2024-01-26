@@ -18,47 +18,119 @@
     <h1>Parte 3</h1>
 
     <main>
-      <div class="preguntas">
+      <div class="preguntas" id="pregunta1">
         <p>
           <b>
-            ¿Qué es un Pull Request? ¿Cómo podriamos realizar una? ¿Qué utilidad tiene?
+            ¿Qué es un Pull Request? ¿Cómo podriamos realizar una? ¿Qué utilidad
+            tiene?
           </b>
         </p>
       </div>
-      <div class="respuesta">
+      <div class="respuesta" id="respuesta1">
         <p>
-          Una Pull Request es una función que nos permite pedir aprobación al equipo sobre un cambio antes de juntarlo con la rama principal.
+          Una Pull Request es una función que nos permite comentarle al equipo
+          los cambios en una rama del repositorio. Una vez se abre una solicitud
+          se puede debatir y revisar los cambios antes de fusionarse con la rama
+          main.
         </p>
         <p>
-          Para poder utilizar un Pull Request debemos acceder a nuestro repositorio remoto en GitHub y entrar en la pestaña de Pull Request.
+          Para poder utilizar un Pull Request debemos acceder a nuestro
+          repositorio remoto en GitHub y entrar en la pestaña de Pull Request.
         </p>
+        <img
+          src="img/PestañaPullRequest.png"
+          alt="Imagen de la pestaña Pull Request"
+        />
+        <p>
+          Le damos a new y seleccionamos la rama devDani para comparar los
+          cambios con la rama principal.
+        </p>
+        <img src="img/NewPullRequest.png" alt="Imagen de New Pull Request" />
+        <img
+          src="img/CompararCambiosRamas.png"
+          alt="Imagen de la seleción de ramas"
+        />
+        <p>
+          Al seleccionar al rama que queremos comparar nos aparecen los cambios
+          realizados en esa rama:
+        </p>
+        <img
+          src="img/CambioDeLaRama.png"
+          alt="Imagen de los cambios en una rama del repositorio"
+        />
+        <p>
+          Le damos a Create pull request, Nos pedira un titulo para la solicitud
+          y algo de descripción sobre el cambio.
+        </p>
+        <img
+          src="img/CrearPullResquest.png"
+          alt="Imagen del boton para crear una Pull Request"
+        />
+        <img
+          src="img/DatosPullRequest.png"
+          alt="Imagen de la ventana para introducir datos"
+        />
+        <p>
+          Aparte de intrducir esos datos podemos añadir revisores,
+          participantes, etiquetas(bug, help want, etc), incidencias(solicitudes pasadas ) e hitos(marcador de
+          etapas o cambios) en la Pull Request.
+        </p>
+        <img
+          src="img/Revisores.png"
+          alt="Imagen del lugar donde añadir revisores"
+        />
+        <img
+          src="img/ParticipantesPullRequest.png"
+          alt="Imagen del lugar donde añadir participantes"
+        />
+        <img
+          src="img/Etiquetas.png"
+          alt="Imagen del lugar donde añadir etiquetas"
+        />
+        <img src="img/Incidencias.png" alt="Imagen del lugar donde añadir las incidencias">
+        <img src="img/Hito.png" alt="Imagen del lugar donde añadir los hitos">
+        <p>Una vez la creamos la Pull Request nos aparecería este asi: </p>
+        <video src="video/PullRequestCreada.webm" controls muted autoplay></video>ç
+        <p>Ahora al entrar a la pestaña de Pull Request nos aparece la Pull Request que acabamos de crear: </p>
         <img src="img/PestañaPullRequest.png" alt="Imagen de la pestaña Pull Request">
-        <p>Le damos a new, seleccionamos la rama devDani para comparar los cambios con la rama principal.</p>
-        <img src="img/NewPullRequest.png" alt="Imagen de New Pull Request">
-        <img src="img/CompararCambiosRamas.png" alt="Imagen de la seleción de ramas">
-        <p>Creamos la Pull Request. Nos pedira un titulo para la solicitud y algo  de descripción. Una vez la creamos nos queda esperar a que sea aceptada y unir la rama devDani con la rama principal.</p>
-        <img src="img/CrearPullResquest.png" alt="">
-        <img src="img/DatosPullRequest.png" alt="">
+        <img src="img/PullRequestCreada.png" alt="Imagen de la Pull Request creada">
+
         <p>
-          Su utilidad se resume en poder revisar y tener un control sobre los cambios del equipo en el desarrollo del proyecto.
+          La utilidad de una Pull Request se resume en poder revisar y tener un
+          control sobre los cambios que el equipo produce en el desarrollo del
+          proyecto.
         </p>
       </div>
-      <div class="preguntas">
+      <div class="preguntas" id="pregunta2">
         <p>
           <b>
-            Ejemplos de conflitos que han surgido durante la resolución del problema.
+            Ejemplos de conflictos que han surgido durante la resolución del
+            problema.
           </b>
         </p>
       </div>
-      <div class="respuesta">
-        <!--Al Intentar hacer push al servidor no dejaba-->
-        <p><b>-Fallo al hacer push al repositorio remoto.</b></p> 
-        <p>Para remediar el error nos hizo falta añadir un origin con la clave ssh del repositorio remoto.</p>
-        <p>Al intentar hacer un push nos aparecia lo siguiente: </p>
-        <img src="img/ProblemaConPush.png" alt="Imagen del problema al hacer push">
-        <p>Despues de remediar el problema nos aparece lo siguiente: </p>
-        <img src="img/ProblemaConPushResuelto.png" alt="Imagen del problema al hacer push resuelto">
-        <p>Lo que se hace en la imagen es eliminar el origin1 que estaba con una clave incorrecta y añadir de nuevo origin1 con la clave ssh del repositorio remoto.</p>
+      <div class="respuesta" id="respuesta2">
+        <!--Al Intentar hacer push al repositorio remoto no dejaba-->
+        <p><b>-Fallo al hacer push al repositorio remoto.</b></p>
+        <p>
+          Para remediar el error nos hizo falta añadir un origin nuevo con la
+          clave ssh del repositorio remoto.
+        </p>
+        <p>Al intentar hacer un push nos aparecia lo siguiente:</p>
+        <img
+          src="img/ProblemaConPush.png"
+          alt="Imagen del problema al hacer push"
+        />
+        <p>Despues de remediar el problema nos aparece lo siguiente:</p>
+        <img
+          src="img/ProblemaConPushResuelto.png"
+          alt="Imagen del problema al hacer push resuelto"
+        />
+        <p>
+          Lo que se hace en la imagen es eliminar el origin1 que estaba con una
+          clave incorrecta y añadir de nuevo origin1 con la clave ssh del
+          repositorio remoto para poder acceder.
+        </p>
       </div>
     </main>
   </body>
