@@ -60,10 +60,10 @@
         </div>
         <div class="respuesta">
             <div>
-                El comando git fetch comprueba si hay algun cambio(o actualización) disponible pero no realiza ninguna
-                transferencia de archivos. <br>
-                El comando git pull por otro lado comprueba si existe algun cambio disponible y trae (copia) esos
-                cambios del
+                git fetch es el comando que le dice a tu git local que recupere la última información de los metadatos
+                del original (aunque no hace ninguna transferencia de archivos. Es más bien como comprobar si hay algún
+                cambio disponible). <br>
+                git pull por otro lado comprueba si existe algun cambio disponible y trae (copia) esos cambios del
                 repositorio remoto.
             </div>
             <div>
@@ -91,15 +91,8 @@
             ¿Podemos añadir seguridad a a nuestro repositorio?
         </div>
         <div class="respuesta">
-            <div>
-                <img src="./img/proteccion1.png" alt="proteccion1">
-
-            </div>
-            <div>
-                <img src="./img/proteccion2.png" alt="proteccion2">
-            </div>
-            Aparte de las diferentes opciones que se ven en las imagenes, se pueden utilizar varias caracteristicas para añadirle seguridad a tu repositio en linea: <br>
-            1- Podemos administrar el acceso al repositorio, y establecer quien puede ver y modificar tu codigo. <br>
+            Se pueden utilizar varias caracteristicas para añadirle seguridad a tu repositio en linea: <br>
+            1- Podemos administrar el acceso a tu repositorio, y establecer quien puede ver y modificar tu codigo. <br>
             2- Administrar el gráfico de dependencias, este se genera automáticamente para todos los repositorios
             públicos. Puedes optar por habilitarlo para bifurcaciones y repositorios privados. El gráfico de
             dependencias interpreta los archivos de manifiesto y bloqueo de un repositorio para identificar
@@ -107,20 +100,14 @@
             3- Habilitar las Dependabots alerts, Dependabot security updates y Dependabot version update. <br>
             Las Dependabots alerts, sirven para identificar una dependencia que presenta una vulnerabilidad en la
             gráfica de dependencias. Puedes habilitar las Dependabot alerts para cualquier repositorio. <br>
-            Si tienes habilitado las Dependabots alerts, puedes habilitar las Dependabot security updates para estar al
-            tanto de
+            Si tienes habilitado las Dependabots alerts, puedes habilitar las Dependabot security updates para estar al tanto de
             solicitudes de cambio y poder detectar las vulnerabilidades de las mismas. <br>
-            Las Dependabot version uptdate sirve para actualizar automáticamente las solicitudes de cambios para
-            mantener tus dependencias actualizadas. <br>
-            4- Administrar la revisión de dependencias, esta caracteristica te permite visualizar los cambios a las
-            dependencias en las solicitudes de cambios antes de que se fusionen con tus repositorios.
+            Las Dependabot  version uptdate sirve para actualizar automáticamente las solicitudes de cambios para mantener tus dependencias actualizadas. <br>
+            4- Administrar la revisión de dependencias, esta caracteristica te permite visualizar los cambios a las dependencias en las solicitudes de cambios antes de que se fusionen con tus repositorios.
             5- Configuración de Code Scannig <br>
-            Puedes configurar el code scanning para identificar automáticamente vulnerabilidades y errores en el código
-            almacenado en el repositorio <br>
-
-            Para mas información puedes consultar el siguiente enlace: <a
-                href="https://docs.github.com/es/code-security/getting-started/securing-your-repository">Documentacíon
-                de seguridad de GitHub</a>
+            Puedes configurar el code scanning para identificar automáticamente vulnerabilidades y errores en el código almacenado en el repositorio <br>
+            
+            Para mas información puedes consultar el siguiente enlace: <a href="https://docs.github.com/es/code-security/getting-started/securing-your-repository">Documentacíon de seguridad de GitHub</a>
 
         </div>
     </main>

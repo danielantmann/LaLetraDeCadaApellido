@@ -1,28 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav>
-        <a href="trabajo.html">Principal</a>
-        <a href="Parte1.html">Parte 1</a>
-        <a href="">Parte 2</a>
-        <a href="">Parte 3</a>
-        
+      <a href="trabajo.html">Principal</a>
+      <a href="Parte1.html">Parte 1</a>
+      <a href="Parte2.html">Parte 2</a>
+      <a href="Parte3.html">Parte 3</a>
     </nav>
 
     <h1>Parte 1</h1>
 
     <main>
-        <div class="preguntas">
-            ¿Como Podemos crear un repositoria en remoto?
-        </div>
-        <div class="respuesta">
-            Tenemos dos maneras 
-        </div>
+      <div class="preguntas" id="pregunta1">¿Cómo podemos crear un repositorio remoto?</div>
+      <div class="respuesta" id="respuesta1">
+        Desde plataformas como GitHub o GitLab
+        <img src="./img/crearrepremoto.png" />
+      </div>
+      <div class="preguntas" id="pregunta2">¿Qué es el README.md?</div>
+      <div class="respuesta" id="respuesta2" >
+        El README.md es un archivo de texto en formato Markdown.<br />
+        Contiene información sobre el proyecto, instrucciones para su
+        instalación y uso, ejemplos, y cualquier otra información relevante para
+        los usuarios del proyecto.<br>
+
+        <img src="./img/markdown.png" /><!-- no puedo poner imagen hasta que hagamos el readme con markdown -->
+      </div>
+
+      <div class="preguntas" id="pregunta3">¿Qué es Markdown?</div>
+      <div class="respuesta" id="respuesta3">
+        Markdown es un lenguaje de marcas para dar formato a textos. Es facil de
+        leer y escribir. Usa la extension .md
+
+        <img src="./img/Markdow-fuente.png" /><!-- no puedo poner imagen hasta que hagamos el readme con markdown -->
+      </div>
+
+      <div class="preguntas" id="pregunta4">¿Qué son y qué utilidad tienen las licencias?</div>
+      <div class="respuesta">
+        Son los terminos y condiciones de uso, establecen la modificación y
+        distribución de un software.<br />
+        Sirven para proteger los derechos del creador sobre su software y
+        restringir o no su uso y que puedes hacer con el.<br>En nuestro caso ponemos GNU GPLv3 ya que damos libre acceso de uso.<br>
+        
+
+        <img src="./img/licenciaGNU GPLv3.0.png" alt="licenciaGNUt" />
+      </div>
+
+      <div class="preguntas" id="pregunta5">¿Qué es el fichero .gitignore?</div>
+      <div class="respuesta" id="respuesta5">
+        El archivo .gitignore es utilizado para especificar archivos y carpetas
+        que Git debe ignorar al rastrear cambios en un proyecto.<br>Al principio del trabajo pensamos que no iba a ser necesario pero al usar visualStudio añadimos un gitignore en .vscode<br>
+
+        <img src="./img/GitIgnore_foto1.png" /><br>
+        <img src="./img/GitIgnore_foto2.png" />
+      </div>
+
+      <div class="preguntas" id="pregunta6">
+        Explicar las tres formas de integrar el repo remoto en un repo local.
+      </div>
+      <div class="respuesta" id="respuesta6">
+        -<code>git clone &lt;URL-del-repositorio-remoto&gt;</code>: Clona un
+        repositorio remoto en tu máquina local.<br />
+        -<code>git remote add &lt;nombre-remoto&gt;</code>: Asocia un
+        repositorio remoto con tu repositorio local.<br />
+        -<code>git pull &lt;nombre-remoto&gt; &lt;rama-remota&gt;</code>: Obtiene
+        cambios desde el repositorio remoto y los fusiona con tu rama local.<br>
+        En nuestro caso optamos por hacer clone.<br>
+
+        <img src="img/gitpullejemplo.png" />
+      </div>
+
+      <div class="preguntas" id="pregunta7">¿Cómo realizar un commit?</div>
+      <div class="respuesta" id="respuesta7">
+        git commit -m "Mensaje del commit"<br />
+        Previamente hay que hacer un git add al contenido que quieras hacer
+        commit<br>
+
+        <img src="./img/commit.png" />
+      </div>
+
+      <div class="preguntas" id="pregunta8">¿Cada cuanto hay que realizar un commit?</div>
+      <div class="respuesta" id="respuesta8">
+        Cada commit debería representar un cambio o una funcionalidad
+        específica.<br />
+        Commits frecuentes y bien estructurados facilitan la revisión de cambios
+        y la colaboración.<br>
+        En nuestro caso cada vez que alguien terminaba un parte medianamente importante hacia un commit<br>
+        especificando su motivo.
+
+       
+      </div>
+
+      <div class="preguntas" id="pregunta9">
+        ¿Cómo podríamos trabajar varias personas en el mismo proyecto?
+      </div>
+      <div class="respuesta" id="respuesta9">
+        Hacer un repositorio remoto ,y una vez el creador de permisos a cada persona que vaya a participar, se establezca un flujo de trabajo en el cual o bien en varias ramas diferentes o en una misma con trabajos separados<br>
+        Nota: no deberiamos trabajar sobre Main(la rama Principal).   
+
+       
+      </div>
     </main>
-</body>
+  </body>
 </html>
