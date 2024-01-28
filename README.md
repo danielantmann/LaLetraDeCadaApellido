@@ -54,21 +54,21 @@ git log: Muestra el historial de commits.
 
 
 # **Opinión Personal**
-Las peticiones se lanzan de la siguiente manera:
 
-- Dani  
+
+- Dani:  
   Fue divertido( y un rompecabeza) hacer este trabajo. He aprendido la potencialidad que tiene la herramienta git y github, la cual nos permitio trabajar de forma sincronizada a los integrantes del grupo en un mismo proyecto. Gracias a las diferentes herramientas pudimos gestionar las diferentes tareas y realizarlas de una forma eficiente(o no tanto).
   Para concluir, pienso que git/ gitHub tiene un potencial increible, siempre y cuando el trabajo este bien organizado.
 
     
-- Marcos  
+- Marcos:  
   Fue divertido trabajar en el esto pero me ha dado asco aveces hay que ser sincero, como no teníamos mucha experiencia la organización de los comits y branches no fue como debería que seria mejor nomenclatura mayor organización mas branches... yo me he divertido comiéndome el coco con otras cosas pero Gitkraken me parece muy visual y mola pero me ha costado pillarlo ejemplo yo pensaba que no me estaba creando las ramas bien porque no las veía visualmente solo veía una cosa los nombres de las ramas, hasta que vi que tenias que mergear la rama a otra rama o al main para q se viera visualmente que no es lo importante pero lo visual en una interfaz gráfica me dice que lo estoy haciendo bien. En resumen después de este trabajo comprendo mas git y creo que debería usarlo a partir de ahora con cualquier cosa que haga para ir practicando.
 
 
-- Alex  
+- Alex:  
 Durante la realización del proyecto ha sido interesante explorar esta herramienta e investigar sobre las funcionalidades que nos ofrece Github.
 
 
-- Jaime  
+- Jaime:  
 En mi caso, al principio estaba super perdido, al añadir el repositorio remoto y al tener que usar los comandos que menos habíamos visto se me hizo cuesta arriba. Pero cuando ya entendí como funcionaba, me di cuenta de que estábamos más perdidos aún de lo que pensaba, pero finalmente nos encontramos y todos los problemas que nos hemos encontrado en la realización podremos afrontarlos con más soltura en el futuro. Ha sido una buena experiencia y la herramienta nos sera útil y recurrente en el futuro.
     
