@@ -1,41 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parte2</title>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <script src="./script/acciones.js"></script>
+    <link rel="icon" href="./img/Git-Icon-Black.png" type="image/x-icon">
 </head>
 
 <body>
     <nav>
-        <a href="trabajo.html">Principal</a>
-        <a href="Parte1.html">Parte 1</a>
-        <a href="Parte2.html">Parte 2</a>
-        <a href="Parte3.html">Parte 3</a>
-
+        <a href="./trabajo.html">Principal</a>
+        <a href="./Parte1.html">Parte 1</a>
+        <a href="./Parte2.html">Parte 2</a>
+        <a href="./Parte3.html">Parte 3</a>
+        <a href="./Gitkraken.html">Extra</a>
     </nav>
 
     <h1>Parte 2</h1>
-
+    
     <main>
-        <div class="preguntas">
-            Creacion de Ramas.
+        
+        <div class="preguntas"id="pregunta1">
+            <button type="button" class="pregunta" onclick="mostrarRespuesta1()">Creación de Ramas.</button>
         </div>
-        <div class="respuesta">
+        <div class="respuesta" id="respuesta1">
             <div>
-                Para la creacion de ramas, utilizamos el siguiente comando: <span> git branch <code> &lt;</code> nombre
+                Para la creación de ramas, utilizamos el siguiente comando: <span> git branch <code> &lt;</code> nombre
                     de la rama > </span>. <br>
                 Para movernos entre las ramas creadas utilizamos el siguiente comando: <span> git checkout
                     <code> &lt;</code> nombre de la rama > </span>.
             </div>
             <img src="./img/gitbranch.png" alt="branch jpg">
         </div>
-        <div class="preguntas">
-            Proceso Merge entre Ramas
+        <div class="preguntas" id="pregunta2">
+            <button type="button" class="pregunta" onclick="mostrarRespuesta2()">Proceso Merge entre Ramas</button>
 
         </div>
-        <div class="respuesta">
+        <div class="respuesta" id="respuesta2">
 
             <div>Antes de fusionar la rama (branch) en la que estamos trabajando con con la principal (main) u otra,
                 puede interesarte subir la rama al repositorio en linea con el comando: <span> git push -u origin
@@ -44,7 +48,7 @@
                 hacia la rama con la que queremos fusionarla(merge) , con el comando: <span> git checkout
                     <code> &lt;</code> nombre de la rama > </span>. Una vez situados en la rama seleccionada, utilizamos
                 el comando: <span> git merge <code> &lt;</code> nombre de la rama > </span>. Si en este paso no da
-                ningun tipo de error podemos volver a subir los nuevos cambios a nuestro repositorio en linea utilizando
+                ningún tipo de error podemos volver a subir los nuevos cambios a nuestro repositorio en linea utilizando
                 nuevamente el comando: <span> git push -u origin <code> &lt;</code> nombre de la rama > </span>. </div>
             <div>
                 <img src="./img/gitMerge1.png" alt="merge01Jpg">
@@ -53,17 +57,17 @@
                 <img src="./img/gitMerge.png" alt="mergeJpg">
             </div>
 
-        </div>
-        <div class="preguntas">
-            Diferencia entre un Pull y un Fetch.
 
         </div>
-        <div class="respuesta">
+        <div class="preguntas" id="pregunta3">
+            <button type="button" class="pregunta" onclick="mostrarRespuesta3()">Diferencia entre un Pull y un Fetch.</button>
+        </div>
+        <div class="respuesta" id="respuesta3">
             <div>
                 git fetch es el comando que le dice a tu git local que recupere la última información de los metadatos
                 del original (aunque no hace ninguna transferencia de archivos. Es más bien como comprobar si hay algún
                 cambio disponible). <br>
-                git pull por otro lado comprueba si existe algun cambio disponible y trae (copia) esos cambios del
+                git pull por otro lado comprueba si existe algún cambio disponible y trae (copia) esos cambios del
                 repositorio remoto.
             </div>
             <div>
@@ -71,15 +75,15 @@
                 <img src="./img/gitPullFetch (1).png" alt="gitFetchJpg">
             </div>
         </div>
-        <div class="preguntas">
-            Como volver a una version anterior del proyecto
+        <div class="preguntas" id="pregunta4">
+            <button type="button" class="pregunta" onclick="mostrarRespuesta4()">Como volver a una version anterior del proyecto</button>
         </div>
-        <div class="respuesta">
+        <div class="respuesta" id="respuesta4">
             <div>
-                Para movernos a versiones anteriores de nuestro proyecto utilizamo el comando: <span>git log</span> ,
-                para ver el nombre(codigo) de la version a la que queremos ir, luego utilizamos el comando: <span> git
-                    checkout <code> &lt;</code> codigo de la rama a la cual deseamos ir > </span>. <br>
-                Para volver a la ultima rama en la que estabamos eutilizampos el comando: <span> git switch - </span>.
+                Para movernos a versiones anteriores de nuestro proyecto utilizamos el comando: <span>git log</span> ,
+                para ver el nombre(código) de la version a la que queremos ir, luego utilizamos el comando: <span> git
+                    checkout <code> &lt;</code> código de la rama a la cual deseamos ir > </span>. <br>
+                Para volver a la ultima rama en la que estábamos utilizamos el comando: <span> git switch - </span>.
             </div>
 
             <div>
@@ -87,12 +91,12 @@
             </div>
 
         </div>
-        <div class="pregunta">
-            ¿Podemos añadir seguridad a a nuestro repositorio?
+        <div class="preguntas" id="pregunta5">
+            <button type="button" class="pregunta" onclick="mostrarRespuesta5()">¿Podemos añadir seguridad a nuestro repositorio?</button>
         </div>
-        <div class="respuesta">
-            Se pueden utilizar varias caracteristicas para añadirle seguridad a tu repositio en linea: <br>
-            1- Podemos administrar el acceso a tu repositorio, y establecer quien puede ver y modificar tu codigo. <br>
+        <div class="respuesta" id="respuesta5">
+            Se pueden utilizar varias características para añadirle seguridad a tu reposición en linea: <br>
+            1- Podemos administrar el acceso a tu repositorio, y establecer quien puede ver y modificar tu código. <br>
             2- Administrar el gráfico de dependencias, este se genera automáticamente para todos los repositorios
             públicos. Puedes optar por habilitarlo para bifurcaciones y repositorios privados. El gráfico de
             dependencias interpreta los archivos de manifiesto y bloqueo de un repositorio para identificar
@@ -103,13 +107,14 @@
             Si tienes habilitado las Dependabots alerts, puedes habilitar las Dependabot security updates para estar al tanto de
             solicitudes de cambio y poder detectar las vulnerabilidades de las mismas. <br>
             Las Dependabot  version uptdate sirve para actualizar automáticamente las solicitudes de cambios para mantener tus dependencias actualizadas. <br>
-            4- Administrar la revisión de dependencias, esta caracteristica te permite visualizar los cambios a las dependencias en las solicitudes de cambios antes de que se fusionen con tus repositorios.
-            5- Configuración de Code Scannig <br>
+            4- Administrar la revisión de dependencias, esta característica te permite visualizar los cambios a las dependencias en las solicitudes de cambios antes de que se fusionen con tus repositorios.
+            5- Configuración de Code Scanning <br>
             Puedes configurar el code scanning para identificar automáticamente vulnerabilidades y errores en el código almacenado en el repositorio <br>
             
-            Para mas información puedes consultar el siguiente enlace: <a href="https://docs.github.com/es/code-security/getting-started/securing-your-repository">Documentacíon de seguridad de GitHub</a>
-
+            Para mas información puedes consultar el siguiente enlace: <a href="https://docs.github.com/es/code-security/getting-started/securing-your-repository">Documentación de seguridad de GitHub</a>
+    
         </div>
+        <button type="button" onclick="ocultarRespuestas()" id="resetButton">Reset</button>
     </main>
 </body>
 

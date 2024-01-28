@@ -1,0 +1,267 @@
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url(../img/25336.jpg);
+    background-blend-mode:multiply ;
+    background-color: rgba(0, 0, 0, 0.758);
+  
+    min-width:fit-content;
+}
+.posicionimagengit{
+   opacity: 30%;
+   position: relative;
+   filter: invert(50%);
+  float: left;
+  left: 350px;
+   z-index: 1;
+}
+.posicionimagengit2{
+    opacity: 30%;
+    position: relative;
+   float: left;
+   left: 380px;
+    z-index: 1;
+    width: 400px;
+ }
+ .posicionimagengit3{
+    opacity: 30%;
+    position: relative;
+   float: left;
+   left: 350px;
+    z-index: 1;
+    width: 450px;
+ }
+.contenedor{
+    text-align: center;
+}
+.preguntas{
+color: white;
+}
+.respuesta{
+    margin-top: 50px;
+    z-index: 2;
+color: white;
+font-family: 'Courier New', Courier, monospace;  
+}
+nav{
+position: sticky;
+top:10px;
+background-color: green;
+padding: 20px;
+margin:10px;
+z-index: 4;
+}
+a{
+   text-decoration: none;
+   color: white;
+   margin: 20px;
+   padding: 10px;
+}
+a:hover{
+    background-color: black;  
+    opacity: 50%;
+    padding: 10px;
+}
+footer{
+    color:white;
+    font-family: 'Courier New', Courier, monospace;   
+}
+h1{
+    text-align: center;
+    color: white;
+}
+.preguntas{
+    position: relative;
+    left: 100px;
+    max-width: 200px;
+    margin-right: 20px;
+}
+
+  
+.respuesta{
+    position:relative;
+    left: 40%;
+    
+    max-width: 50%;
+    z-index: 1;
+    
+    line-height: 1.5; /* Multiplicador: 1.5 veces el tamaño de la fuente actual */
+      
+      
+    span{
+        background-color: grey;
+        border: 1px solid green;
+        z-index: 1;
+    }
+    
+}
+#resetButton{
+    position: relative;
+    left: 46%;
+    grid-column: 3/3;
+    grid-row: 4;
+    max-width: 50px;
+    max-height: 50px;
+}
+.preguntas:hover{
+    max-block-size:0% ;
+    background-color: rgb(14, 0, 0);
+    opacity: 50%;
+}
+button:hover{
+    cursor: pointer;
+}
+
+#respuesta1{
+    grid-row: 3;
+    grid-column: 1/5;
+    display: none;
+    max-width: 750px;
+    margin-bottom: 10px;
+}
+#respuesta2{
+    grid-row: 3;
+    grid-column: 1/5;
+    display: none;
+    max-width: 750px;
+    margin-bottom: 10px;
+}
+#respuesta3{
+    grid-row: 3;
+    grid-column: 1/5;
+    display: none;
+    max-width: 750px;
+    margin-bottom: 10px;
+}
+#respuesta4{
+    grid-row: 3;
+    grid-column: 1/5;
+    display: none;
+    max-width: 750px;
+    margin-bottom: 10px;
+}
+#respuesta5{
+    grid-row: 3;
+    grid-column: 1/5;
+    display: none;
+    max-width: 750px;
+    margin-bottom: 10px;
+}
+#respuesta6{
+    grid-row: 3;
+    grid-column: 1/5;
+    display: none;
+    max-width: 750px;
+    margin-bottom: 10px;
+}
+#respuesta7{
+    grid-column: 1/5;
+    grid-row: 3;
+    display: none;
+    max-width: 750px;
+    margin-bottom: 10px;
+}
+#respuesta8{
+    grid-row: 3;
+    grid-column: 1/5;
+    display: none;
+    max-width: 750px;
+    margin-bottom: 10px;
+}
+#respuesta9{
+    grid-row: 3;
+    grid-column: 1/5;
+    display: none;
+    max-width: 750px;
+    margin-bottom: 10px;
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+
+}
+.reducciontamano{
+    position: relative;
+    left: -300px;
+    width: 1250px;
+    margin:auto;
+}
+#pregunta1{
+    grid-column: 1;
+    grid-row:1 ;
+}
+#pregunta2{
+    grid-column: 2;
+    grid-row:1 ;
+}
+#pregunta3{
+    grid-column: 3;
+    grid-row:1 ;
+}
+#pregunta4{
+    grid-column: 4;
+    grid-row:1 ;
+}
+#pregunta5{
+    grid-column: 5;
+    grid-row:1 ;
+}
+#pregunta6{
+    grid-column: 1;
+    grid-row:2 ;
+}
+#pregunta7{
+    grid-column: 2;
+    grid-row:2 ;
+}
+#pregunta8{
+    grid-column: 3;
+    grid-row:2 ;
+}
+#pregunta9{
+    grid-column: 4;
+    grid-row:2 ;
+}
+.pregunta {
+    background-color: #006f16;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  
+    /* Animación de entrada */
+    &:hover {
+      transition: all 0.3s ease-in-out;
+      background-color: #00410d;
+      color: white;
+  
+      /* Efecto de rebote */
+      transform: translate(0, 5px);
+      box-shadow: 0 0 5px #000;
+  
+      /* Efecto de destello */
+      animation: flash 0.3s ease-in-out;
+    }
+  
+    /* Animación de clic */
+    &:active {
+      transform: scale(0.9);
+      transition: all 0.2s;
+  
+      /* Efecto de sombra */
+      box-shadow: 0 0 10px #000;
+    }
+  
+    /* Animación de destello */
+    @keyframes flash {
+      from {
+        opacity: 1;
+      }
+      to {
+        opacity: 0.5;
+      }
+    }
+  }
+  div{margin-bottom: 10px;}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Extra GitKraken</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <Script src="./script/acciones.js"></Script>
+    <link rel="icon" href="./img/Git-Icon-Black.png" type="image/x-icon">
+  </head>
+
+  <body>
+    <nav>
+      <a href="trabajo.html">Principal</a>
+      <a href="Parte1.html">Parte 1</a>
+      <a href="Parte2.html">Parte 2</a>
+      <a href="Parte3.html">Parte 3</a>
+      <a href="Gitkraken.html">Extra</a>
+    </nav>
+    <h1>Extra <br> Documentación de GitKraken</h1>
+  <main>
+        
+    <div class="preguntas"id="pregunta1">
+        <button type="button" class="pregunta" onclick="mostrarRespuesta1()">¿Qué es GitKraken?</button>
+    </div>
+    <div class="respuesta" id="respuesta1">
+        <div>
+            
+GitKraken es un asistente visual para Git que te ayuda a controlar tus proyectos de código, incluso si no eres un experto. Es como tener un compañero que te guía por el proceso.iente comando: <span> git checkout
+        
+        </div>
+        <img class="reducciontamano" src="./img/Gitkraken.png" alt="gitKraken">
+    </div>
+    <div class="preguntas" id="pregunta2">
+        <button type="button" class="pregunta" onclick="mostrarRespuesta2()">Commit en GitKraken</button>
+
+    </div>
+    <div class="respuesta" id="respuesta2">
+
+        <div>
+          Dentro del proyecto en GitKraken al realizar cualquier cambio por minúsculo que sea podemos hacer un commit, para poder realizarlo es simple hay varias formas la mas sencilla es trabajando desde gitkraken guardar cambios darle a <span>Stage all Changes</span>.
+        </div>
+        <div>
+            <img  src="./img/commit_gitkraken.png" alt="commit_gitkraken">
+        </div>
+        <div>
+          Esto permitirá ver todos los cambios realizados hasta el momento en rojo lo que estaba antes y en verde lo que esta ahora.
+        </div>
+        <div>
+          <img src="./img/comprobaciondecambios.png" alt="comprobación_cambios">
+        </div>
+        <div>
+          Una vez que estemos contentos con los cambios que hemos realizado podemos hacer un commit para guardarlos. El commit nos dara la opcion de meter un titulo y una descripcción muy util para cuando se trabaja en equipp.
+        </div>
+        <div>
+          Aparte de esta forma también podemos usar la consola en Gitkraken y poner: <span>git commit -m "Mensaje de commit"</span>
+        </div>
+        <div>
+          <img src="./img/terminalgitkraken.png" alt="terminal gitkraken">
+        </div>
+
+    </div>
+    <div class="preguntas" id="pregunta3">
+        <button type="button" class="pregunta" onclick="mostrarRespuesta3()">Pull en GitKraken</button>
+    </div>
+    <div class="respuesta" id="respuesta3">
+        <div>
+            GitKraken permite realizar un pull de manera sencilla (ademas es fácil de encontrar ya que es muy gráfico), para ello debemos ir a la parte superior. Este pull nos dará varias opciones que podemos seleccionar:
+            <br>-Fetch all: Este comando simplemente recupera los últimos commits del repositorio remoto y los agrega a las ramas de seguimiento remoto de tu repositorio local.
+            <br>-Pull (fast-forward if possible): Este comando es una combinación de <span>git fetch </span>y <span> git merge</span>. Recupera los últimos commits del repositorio remoto y luego fusiona esos cambios en tu rama local si la fusión es una fusión rápida.
+            <br>-Pull (fast-forward only): Este comando es similar a <span>git pull (fast-forward if possible)</span>, pero solo realizará una fusión rápida si es posible.
+            <br>-Pull (rebase): Este comando es una alternativa más potente a <span> git pull (fast-forward if possible) </span>. Recupera los últimos commits del repositorio remoto y luego rebasa tu rama local sobre la rama remota. Esto significa que tu rama local se volverá a escribir para incluir los últimos cambios de la rama remota, aplicando los cambios como si los hubieras realizado tú mismo.
+        </div>
+        <div>
+
+            <img src="./img/pullgitkraken.png" alt="menu pull">
+        </div>
+        <div>
+          Si queremos también tenemos comandos para hacer pull desde la terminal de Gitkraken, pero son los mismos que git creo. <span> git fetch </span>, <span> git pull </span>, este ultimo comando tiene 3 opciones: <br>-<span> -f </span> o <span> --force </span> Realiza la combinación de forma forzada, incluso si hay conflictos. <br>-<span> --ff-only</span>: Solo realiza la combinación de los cambios si es posible hacerlo sin conflictos. <br>-<span> --rebase</span> : Realiza la combinación de los cambios mediante un rebase.
+        </div>
+      <div>
+        <video class="reducciontamano" src="video/gitkrakenpull.webm" controls muted autoplay></video>
+        </div>
+    </div>
+
+    <div class="preguntas" id="pregunta4">
+        <button type="button" class="pregunta" onclick="mostrarRespuesta4()">Gestión de ramas en GitKraken</button>
+    </div>
+    <div class="respuesta" id="respuesta4">
+        <div>
+            La Gestión de ramas es bastante sencilla:
+            Para crear una rama debemos ir a la parte superior de GitKraken y darle a <span>Branch</span> y escribir el nombre de la rama que queramos poner.
+        </div>
+
+        <div>
+            <img src="./img/rama.png" alt="New Branch">
+        </div>
+        <div>
+          Una vez creada una rama podemos verla en la parte inferior de GitKraken. (Yo pensaba que te lo hacia muy visual al principio y al parecer no.)
+        </div>
+        <div>
+          <img src="./img/creacionderama.png" alt="rama creada">
+        </div>
+        <div>
+          Cuando hagamos cambios en nuestra rama debemos hacer un commit para poder guardarlos. Y después de eso podemos o bien hacer otra rama desde la misma y después hacer un merge de estas dos o podemos hacer un merge a el main.
+        </div>
+        <div>
+          Aquí se hace un merge entre ramas.
+          <img src="./img/ramaconrama.png" alt="branch merges branch">
+        </div>
+        <div>
+          Aquí se hace un merge al main.
+          <img src="./img/ramaconmain.png" alt="branch merges main">
+        </div>
+        <div>
+          Las ramas son muy visuales y muy útiles para trabajar en equipo. Pero hay que tener cuidado con la nomenclatura ya que como vemos en esta imagen es un lio:
+          <img src="./img/ramastest.png" alt="lio de ramas">
+        </div>
+        <div>
+          Todo el proceso de las ramas en este video:
+          
+          <img class="reducciontamano" src="video/gestionramas.gif" alt="gestión de ramas">
+
+        </div>
+    </div>
+    <div class="preguntas" id="pregunta5">
+        <button type="button" class="pregunta" onclick="mostrarRespuesta5()">Resolución de conflictos desde GitKraken</button>
+    </div>
+    <div class="respuesta" id="respuesta5">
+       <div>
+        La resolución de conflictos en GitKraken es sencilla se puede realizar de 2 formas: <br>
+       -Manualmente: hay que hacer click en el archivo que tiene el conflicto: <br>
+        1.Elegir una version del archivo y reemplazarlo. <br>
+        2.Combinar las versiones conservando los cambios que queramos. <br> 
+        -Automáticamente: Gitkraken intenta resolver los conflictos automáticamente, a la hora de mergear gitkraken mostrara una combinación de los dos archivos.
+
+       </div>
+       <div>
+        <img class="reducciontamano" src="./img/conflictos.png" alt="conflicto de cambios">
+       </div>
+    </div>
+    <button type="button" onclick="ocultarRespuestas()" id="resetButton">Reset</button>
+</main>
+  </body>
+</html>

@@ -56,13 +56,13 @@ git log: Muestra el historial de commits.
 Las peticiones se lanzan de la siguiente manera:
 
 - Dani  
-  Fue divertido hacer este trabajo he aprendido la potencialidad que tiene la herramienta git y github, la cual nos permite trabajar de forma sincronizada a los integrantes de un grupo en un mismo proyecto, Perimitiendonos así gestionar las diferentes tareas y realizarlas de una forma eficiente.
+  Fue divertido hacer este trabajo he aprendido la potencialidad que tiene la herramienta git y github, la cual nos permite trabajar de forma sincronizada a los integrantes de un grupo en un mismo proyecto, Permitiéndonos así gestionar las diferentes tareas y realizarlas de una forma eficiente.
 
 
 
     
 - Marcos  
-Aqui va la opinion de jaime
+  Fue divertido trabajar en el esto pero me ha dado asco aveces hay que ser sincero, como no teníamos mucha experiencia la organización de los comits y branches no fue como debería que seria mejor nomenclatura mayor organización mas branches... yo me he divertido comiéndome el coco con otras cosas pero Gitkraken me parece muy visual y mola pero me ha costado pillarlo ejemplo yo pensaba que no me estaba creando las ramas bien porque no las veía visualmente solo veía una cosa los nombres de las ramas, hasta que vi que tenias que mergear la rama a otra rama o al main para q se viera visualmente que no es lo importante pero lo visual en una interfaz gráfica me dice que lo estoy haciendo bien. En resumen después de este trabajo comprendo mas git y creo que debería usarlo a partir de ahora con cualquier cosa que haga para ir practicando.
   
 
 
