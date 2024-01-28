@@ -57,7 +57,8 @@ git log: Muestra el historial de commits.
 Las peticiones se lanzan de la siguiente manera:
 
 - Dani  
-  Fue divertido hacer este trabajo he aprendido la potencialidad que tiene la herramienta git y github, la cual nos permite trabajar de forma sincronizada a los integrantes de un grupo en un mismo proyecto, Permitiéndonos así gestionar las diferentes tareas y realizarlas de una forma eficiente.
+  Fue divertido( y un rompecabeza) hacer este trabajo. He aprendido la potencialidad que tiene la herramienta git y github, la cual nos permitio trabajar de forma sincronizada a los integrantes del grupo en un mismo proyecto. Gracias a las diferentes herramientas pudimos gestionar las diferentes tareas y realizarlas de una forma eficiente(o no tanto).
+  Para concluir, pienso que git/ gitHub tiene un potencial increible, siempre y cuando el trabajo este bien organizado.
 
 
 
